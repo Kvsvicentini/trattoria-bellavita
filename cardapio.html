@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio | Trattoria Bellavita</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="loader">
+        <h1>Trattoria Bellavita</h1>
+    </div>
 
     <header>
         <nav class="navbar">
@@ -25,57 +28,577 @@
     </header>
 
     <main>
-
         <section class="cardapio">
-
             <div class="titulo-secao">
                 <h2>Nosso Cardápio</h2>
             </div>
 
-            <div class="categoria">
-                <h3>Massas</h3>
+            <div class="cardapio-container">
 
-                <div class="item-cardapio">
-                    <h4>Spaghetti Carbonara</h4>
-                    <p>Massa italiana com molho cremoso tradicional.</p>
-                    <span>R$ 49,90</span>
+                <div class="filtros-cardapio">
+                    <button class="filtro-btn ativo" data-filter="all">Todos</button>
+                
+                    <button class="filtro-btn" data-filter="entradas">Entradas</button>
+                
+                    <button class="filtro-btn" data-filter="massas">Massas</button>
+                
+                    <button class="filtro-btn" data-filter="pizzas">Pizzas</button>
+                
+                    <button class="filtro-btn" data-filter="sobremesas">Sobremesas</button>
+                
+                    <button class="filtro-btn" data-filter="bebidas">Bebidas</button>
                 </div>
 
-                <div class="item-cardapio">
-                    <h4>Fettuccine Alfredo</h4>
-                    <p>Massa artesanal com molho branco especial.</p>
-                    <span>R$ 52,90</span>
+                <div class="categoria entradas">
+                    <h3>Entradas</h3>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/bruschetta.jpg" alt="Bruschetta Italiana">
+                            <div class="item-info">
+                                <h4>Bruschetta Italiana</h4>
+                                <span>R$ 29,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                6 fatias de pão italiano artesanal levemente tostadas,
+                                servidas com tomates frescos temperados,
+                                manjericão, alho e azeite extravirgem.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/burrata.jpg" alt="Burrata Especial">
+                            <div class="item-info">
+                                <h4>Burrata Especial</h4>
+                                <span>R$ 34,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Burrata cremosa de 200g acompanhada de tomates cereja,
+                                rúcula fresca e molho pesto artesanal da casa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/carpaccio.jpg" alt="Carpaccio di Manzo">
+                            <div class="item-info">
+                                <h4>Carpaccio di Manzo</h4>
+                                <span>R$ 36,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Finas fatias de carne bovina temperadas com azeite,
+                                rúcula fresca, alcaparras e lascas de parmesão italiano.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/focaccia.jpg" alt="Focaccia Toscana">
+                            <div class="item-info">
+                                <h4>Burrata Especial</h4>
+                                <span>R$ 28,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Pão italiano artesanal assado em forno especial,
+                                temperado com alecrim fresco,
+                                azeite extravirgem e flor de sal.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
 
-            <div class="categoria">
-                <h3>Pizzas</h3>
+                <div class="categoria massas">
+                    <h3>Massas</h3>
 
-                <div class="item-cardapio">
-                    <h4>Margherita</h4>
-                    <p>Molho artesanal, mozzarella e manjericão.</p>
-                    <span>R$ 59,90</span>
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/carbonara.jpg" alt="Carbonara">
+                            <div class="item-info">
+                                <h4>Spaghetti Carbonara</h4>
+                                <span>R$ 49,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Aproximadamente 500g de spaghetti italiano servido
+                                com molho cremoso à base de gema,
+                                parmesão maturado e pancetta crocante.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/fettuccine.jpg" alt="Fettuccine Alfredo">
+                            <div class="item-info">
+                                <h4>Fettuccine Alfredo</h4>
+                                <span>R$ 49,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Massa artesanal envolvida em molho cremoso de parmesão,
+                                manteiga italiana e leve toque de noz-moscada.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/ravioli.jpg" alt="Ravioli di Ricotta">
+                            <div class="item-info">
+                                <h4>Ravioli di Ricotta</h4>
+                                <span>R$ 49,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                12 raviolis artesanais recheados com ricotta fresca
+                                e ervas italianas, servidos ao molho pomodoro da casa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/lasagna.jpg" alt="Lasagna Tradizionale">
+                            <div class="item-info">
+                                <h4>Lasagna Tradizionale</h4>
+                                <span>R$ 58,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Generosa porção de lasanha preparada com massa fresca,
+                                molho bolonhesa artesanal,
+                                bechamel cremosa e queijo gratinado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/gnocchi.jpg" alt="Gnocchi al Pesto">
+                            <div class="item-info">
+                                <h4>Gnocchi al Pesto</h4>
+                                <span>R$ 54,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Nhoque artesanal de batata servido com molho pesto fresco,
+                                manjericão italiano e parmesão ralado na hora.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/penne.jpg" alt="Penne alla Vodka">
+                            <div class="item-info">
+                                <h4>Penne alla Vodka</h4>
+                                <span>R$ 57,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Massa penne italiana envolvida em molho cremoso de tomate,
+                                ervas frescas e delicado toque de vodka.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/tagliatelle.jpg" alt="Tagliatelle al Funghi">
+                            <div class="item-info">
+                                <h4>Tagliatelle al Funghi</h4>
+                                <span>R$ 59,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Massa fresca servida com mix de cogumelos salteados,
+                                creme leve e parmesão italiano maturado.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="item-cardapio">
-                    <h4>Quattro Formaggi</h4>
-                    <p>Pizza com quatro queijos italianos.</p>
-                    <span>R$ 64,90</span>
-                </div>
-            </div>
+                <div class="categoria pizzas">
+                    <h3>Pizzas</h3>
 
-            <div class="categoria">
-                <h3>Sobremesas</h3>
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/pizza_margherita.jpg" alt="Pizza Margherita">
+                            <div class="item-info">
+                                <h4>Pizza Margherita</h4>
+                                <span>R$ 59,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Pizza grande de fermentação natural preparada com
+                                molho artesanal de tomate,
+                                mozzarella fresca e folhas de manjericão.
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="item-cardapio">
-                    <h4>Tiramisù</h4>
-                    <p>Sobremesa clássica italiana.</p>
-                    <span>R$ 24,90</span>
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/pizza_quattro_formaggi.jpg" alt="Pizza Quattro Formaggi">
+                            <div class="item-info">
+                                <h4>Pizza Quattro Formaggi</h4>
+                                <span>R$ 64,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Pizza italiana coberta com mozzarella,
+                                gorgonzola, parmesão e provolone selecionados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/pizza_calabrese.jpg" alt="Pizza Calabrese">
+                            <div class="item-info">
+                                <h4>Pizza Calabrese</h4>
+                                <span>R$ 61,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Pizza artesanal preparada com linguiça calabresa especial,
+                                cebola roxa caramelizada e azeitonas pretas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/pizza_parma_rucula.jpg" alt="Pizza Parma e Rúcula">
+                            <div class="item-info">
+                                <h4>Pizza Parma e Rúcula</h4>
+                                <span>R$ 68,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Pizza grande de massa leve e fermentação natural,
+                                finalizada com presunto parma,
+                                rúcula fresca e parmesão em lascas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/pizza_napoli.jpg" alt="Pizza Napoli">
+                            <div class="item-info">
+                                <h4>Pizza Napoli</h4>
+                                <span>R$ 63,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Tradicional pizza italiana preparada com molho artesanal,
+                                mozzarella, anchovas selecionadas e manjericão fresco.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/piazza_diavola.jpg" alt="Pizza Diavola">
+                            <div class="item-info">
+                                <h4>Pizza Diavola</h4>
+                                <span>R$ 65,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Pizza levemente apimentada preparada com salame italiano,
+                                pimenta calabresa e mozzarella especial da casa.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+
+                <div class="categoria sobremesas">
+                    <h3>Sobremesas</h3>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/tiramisu.jpg" alt="Tiramisù">
+                            <div class="item-info">
+                                <h4>Tiramisù</h4>
+                                <span>R$ 24,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="detalhes-prato">
+                            <p>
+                                Clássica sobremesa italiana preparada com camadas
+                                de biscoito champagne embebido em café,
+                                creme mascarpone e cacau polvilhado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/cannoli.jpg" alt="Cannoli Siciliani">
+                            <div class="item-info">
+                                <h4>Cannoli Siciliani</h4>
+                                <span>R$ 26,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                2 cannolis artesanais recheados com creme doce de ricotta,
+                                finalizados com raspas de chocolate meio amargo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/panna_cotta.jpg" alt="Cannoli Siciliani">
+                            <div class="item-info">
+                                <h4>Panna Cotta</h4>
+                                <span>R$ 23,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Sobremesa italiana cremosa e delicada,
+                                servida com calda artesanal de frutas vermelhas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/gelato.jpg" alt="Gelato Italiano">
+                            <div class="item-info">
+                                <h4>Gelato Italiano</h4>
+                                <span>R$ 21,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Sorvete artesanal italiano disponível nos sabores
+                                pistache, chocolate, morango, limão siciliano e baunilha.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoria bebidas">
+                    <h3>Bebidas</h3>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/soda.jpg" alt="Soda Italiana">
+                            <div class="item-info">
+                                <h4>Soda Italiana</h4>
+                                <span>R$ 18,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Refil de 500ml de bebida gaseificada italiana
+                                nos sabores frutas vermelhas ou limão siciliano.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/limoncello.jpg" alt="Limoncello">
+                            <div class="item-info">
+                                <h4>Limoncello</h4>
+                                <span>R$ 22,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Licor italiano tradicional produzido com limão siciliano,
+                                servido gelado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/vinho.jpg" alt="Limoncello">
+                            <div class="item-info">
+                                <h4>Vinho Chianti</h4>
+                                <span>R$ 34,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Vinho tinto clássico da Toscana,
+                                com aroma intenso e notas frutadas marcantes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/cafe.jpg" alt="Expresso Italiano">
+                            <div class="item-info">
+                                <h4>Expresso Italiano</h4>
+                                <span>R$ 12,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Café espresso intenso preparado no tradicional estilo italiano,
+                                servido em dose de 60ml.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="item-topo">
+                            <img src="./img/cappuccino.jpg" alt="Cappuccino Italiano">
+                            <div class="item-info">
+                                <h4>Cappuccino Italiano</h4>
+                                <span>R$ 16,90</span>
+                                <button class="btn-detalhes">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="detalhes-prato">
+                            <p>
+                                Café espresso encorpado com leite vaporizado
+                                e espuma cremosa ao estilo tradicional italiano.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
         </section>
-
     </main>
 
     <script src="js/script.js"></script>

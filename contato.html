@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Contato | Trattoria Bellavita</title>
 
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="loader">
+        <h1>Trattoria Bellavita</h1>
+    </div>
 
     <header>
         <nav class="navbar">
@@ -25,35 +29,82 @@
     </header>
 
     <main>
-
         <section class="contato">
-
-            <div class="titulo-secao">
-                <h2>Faça seu Pedido</h2>
+            <div class="contato-card">
+        
+                <!-- FORMULÁRIO -->
+                <div class="contato-formulario">
+                    <div class="titulo-secao">
+                        <h2>Faça seu Pedido</h2>
+                    </div>
+                    <form class="formulario">
+        
+                        <input type="text" placeholder="Seu nome" required>
+        
+                        <input type="tel" placeholder="Telefone" required>
+        
+                        <textarea placeholder="Digite seu pedido">
+                        </textarea>
+        
+                        <button type="submit" class="btn">
+                            Enviar Pedido
+                        </button>
+                    </form>
+                </div>
+        
+                <!-- INFORMAÇÕES -->
+                <div class="info-contato">
+                    <h3>Trattoria Bellavita</h3>
+                    <p>
+                        Viva uma experiência gastronômica italiana
+                        sem sair de São Paulo.
+                    </p>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Rua Itália, 123 - São Paulo
+                        </span>
+                    </div>
+        
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            (11) 99999-9999
+                        </span>
+                    </div>
+        
+                    <div class="info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>
+                            Terça à Domingo • 18h às 23h
+                        </span>
+                    </div>
+        
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            contato@bellavita.com
+                        </span>
+    
+                    </div>
+        
+                    <!-- REDES -->
+                    <div class="redes">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+        
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+        
+                        <a href="#">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-
-            <form class="formulario">
-
-                <input type="text" placeholder="Seu nome" required>
-
-                <input type="tel" placeholder="Telefone" required>
-
-                <textarea placeholder="Digite seu pedido"></textarea>
-
-                <button type="submit" class="btn">
-                    Enviar Pedido
-                </button>
-
-            </form>
-
-            <div class="info-contato">
-                <p><strong>Telefone:</strong> (11) 99999-9999</p>
-                <p><strong>Endereço:</strong> Rua Itália, 123 - São Paulo</p>
-                <p><strong>Horário:</strong> 18h às 23h</p>
-            </div>
-
         </section>
-
     </main>
 
     <script src="js/script.js"></script>

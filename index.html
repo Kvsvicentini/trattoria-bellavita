@@ -5,9 +5,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <title>Trattoria Bellavita</title>
     </head>
@@ -18,17 +16,19 @@
                 <div class="logo">
                     <h1>Trattoria Bellavita</h1>
                 </div>
-
-                <ul class="nav-links">
+        
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        
+                <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="cardapio.html">Cardápio</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
-
-                <div class="menu-mobile">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
             </nav>
         </header>
 
@@ -46,6 +46,26 @@
                 </div>
             </section>
 
+            <section class="home-sobre">
+                <div class="home-sobre-img">
+                    <img src="./img/familia.jpg" alt="Família Bellavita">
+                </div>
+            
+                <div class="home-sobre-texto">
+                    <h2>Uma tradição familiar italiana</h2>
+            
+                    <p>
+                        Fundada pela família Bellavita,
+                        nossa trattoria nasceu da paixão
+                        pela culinária tradicional italiana...
+                    </p>
+            
+                    <a href="sobre.html" class="btn">
+                        Conheça Nossa História
+                    </a>
+                </div>
+            </section>
+
             <section class="destaques">
                 <div class="titulo-secao">
                     <h2>Especialidades da Casa</h2>
@@ -54,19 +74,19 @@
                 <div class="cards">
 
                     <div class="card">
-                        <img src="img/carbonara.jpg" alt="Carbonara">
+                        <img src="./img/carbonara.jpg" alt="Carbonara">
                         <h3>Spaghetti Carbonara</h3>
                         <p>Massa tradicional italiana preparada com ingredientes autênticos.</p>
                     </div>
 
                     <div class="card">
-                        <img src="img/pizza.jpg" alt="Pizza Italiana">
+                        <img src="./img/pizza.jpg" alt="Pizza Italiana">
                         <h3>Pizza Margherita</h3>
                         <p>Receita clássica italiana feita em forno artesanal.</p>
                     </div>
 
                     <div class="card">
-                        <img src="img/tiramisu.jpg" alt="Tiramisu">
+                        <img src="./img/tiramisu.jpg" alt="Tiramisu">
                         <h3>Tiramisù</h3>
                         <p>Sobremesa tradicional italiana com sabor marcante.</p>
                     </div>
@@ -77,14 +97,25 @@
 
         <footer>
             <div class="footer-content">
-                <h3>Trattoria Bellavita</h3>
-
-                <p>Tradição italiana servida à mesa.</p>
-
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <div class="footer-logo">
+                    <h3>Trattoria Bellavita</h3>
+                    <p>
+                        Tradição italiana servida à mesa desde 1985.
+                    </p>
+                </div>
+        
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <a href="index.html">Início</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="cardapio.html">Cardápio</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+        
+                <div class="footer-contato">
+                    <h4>Contato</h4>
+                    <p>(11) 99999-9999</p>
+                    <p>São Paulo - SP</p>
                 </div>
             </div>
         </footer>
