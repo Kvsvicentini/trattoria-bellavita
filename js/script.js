@@ -70,31 +70,34 @@ if(botoes.length > 0){
     });
 }
 
-/*Menu Hambúrguer*/
-const menuToggle =
-document.getElementById('menu-toggle');
+/* =========================
+   MENU HAMBÚRGUER
+========================= */
 
-const navLinks =
-document.getElementById('nav-links');
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
 
 if(menuToggle && navLinks){
-
     menuToggle.addEventListener('click', () => {
-
         navLinks.classList.toggle('ativo');
-
     });
 }
 
+
+/* =========================
+   HEADER AO ROLAR
+========================= */
+
+const header = document.querySelector('header');
+
 window.addEventListener('scroll', () => {
 
-    const header =
-    document.querySelector('header');
-
-    header.classList.toggle(
-        'scroll',
-        window.scrollY > 50
-    );
+    if(header){
+        header.classList.toggle(
+            'scroll',
+            window.scrollY > 50
+        );
+    }
 });
 
 const formulario = document.querySelector(".formulario");
